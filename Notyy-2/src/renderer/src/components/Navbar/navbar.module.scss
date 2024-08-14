@@ -1,0 +1,87 @@
+.outerBox {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .topBar {
+    height: 20px;
+    -webkit-app-region: drag;
+    // styles.scss
+
+    .flex_container {
+      padding-top: 5px;
+      padding-right: 5px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-left: 0.5rem;
+
+      .button_group {
+        display: flex;
+        gap: 0.5rem;
+
+        button {
+          -webkit-app-region: no-drag;
+          width: 0.95rem;
+          height: 0.95rem;
+          border-radius: 9999px;
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+
+          &.close {
+            background-color: #ef4444;
+
+            &:hover {
+              background-color: #dc2626;
+            }
+          }
+
+          &.minimize {
+            background-color: #eab308;
+
+            &:hover {
+              background-color: #ca8a04;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nav {
+    padding: 0 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      color: white;
+      font: 900;
+      font-size: 2.3rem;
+    }
+
+    .buttonBox {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      button {
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+      }
+      svg{
+        color: white;
+      }
+
+      button:hover {
+        background-color: rgba(0, 0, 0, 0.090);
+        border-radius: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  //position: relative;
+  //left: -95px;
+  width: 100%;
+
+  svg {
+    position: relative;
+    left: 40px;
+  }
+
+  input {
+    font-size: 20px;
+    width: 100%;
+    height: 45px;
+    border-radius: 45px;
+    outline: none;
+    border: none;
+    padding-left: 50px;
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  }
+
+  input:focus{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  }
+}

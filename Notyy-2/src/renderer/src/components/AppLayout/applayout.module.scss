@@ -1,0 +1,34 @@
+.rootLayout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  //overflow-x: hidden;
+  overflow-y: auto;
+  flex-direction: column;
+  background-color: #FFF6E9;  
+}
+
+::-webkit-scrollbar{
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 10px;
+}

@@ -1,0 +1,38 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+
+.toggleButton {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 1px solid #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  cursor: pointer;
+
+  &.completed {
+    background-color: #10b981;
+    border-color: #10b981;
+  }
+}
+
+.text {
+  flex-grow: 1;
+  font-size: 0.875rem;
+  color: #4b5563;
+
+  &.completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+  }
+}
+
+.deleteButton {
+  color: #ef4444;
+  cursor: pointer;
+}

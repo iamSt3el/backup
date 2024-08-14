@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  //margin-top: 30px;
+
+  .addButton {
+    font-size: 1rem;
+    width: 140px;
+    height: 45px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.7rem 1.1rem;
+    background-color: #000000;
+    border-radius: 45px;
+    color: white;
+    transition-property: background-color, transform;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .addButton:hover {
+    background-color: #686d76;
+    transform: scale(1.05);
+  }
+}
